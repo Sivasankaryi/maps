@@ -17,30 +17,32 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/arcgis-concept",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
-          },
+  "outputPath": "dist/arcgis-concept",
+  "index": "src/index.html",
+  "browser": "src/main.ts",
+  "polyfills": ["zone.js"],
+  "tsConfig": "tsconfig.app.json",
+
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "public"
+    },
+    {
+      "glob": "**/*",
+      "input": "node_modules/@arcgis/core/assets",
+      "output": "assets"
+    }
+  ],
+
+  "styles": [
+    "node_modules/@arcgis/core/assets/esri/themes/light/main.css",
+    "src/styles.scss"
+  ],
+
+  "scripts": []
+}
+,
           "configurations": {
             "production": {
               "budgets": [
@@ -83,19 +85,22 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@arcgis/core/assets",
+                "output": "assets"
               }
             ],
             "styles": [
+              "node_modules/@arcgis/core/assets/esri/themes/light/main.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "73d8e74f-5abc-4172-b506-ced8f18284f5"
   }
 }
