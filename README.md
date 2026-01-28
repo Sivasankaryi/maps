@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ArcgisConcept
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
@@ -57,3 +58,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# maps
+>>>>>>> 7d41fbac60d5172b7e51375554767402fb5d0ff5
