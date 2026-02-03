@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #f1f1f1;
+  color: #333;
+}
+
+a.active {
+  background: #007ac2;
+  color: white;
+}

@@ -1,133 +1,159 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import Map from "@arcgis/core/Map";
-import MapView from "@arcgis/core/views/MapView";
-import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
-import Graphic from "@arcgis/core/Graphic";
+
+import Map from '@arcgis/core/Map';
+import MapView from '@arcgis/core/views/MapView';
+import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
+import Graphic from '@arcgis/core/Graphic';
 
 @Component({
   selector: 'app-custom-cluster',
-  imports: [],
-  templateUrl: './custom-cluster.component.html',
-  styleUrl: './custom-cluster.component.scss'
+  template: `<div #mapViewDiv style="height:100vh;width:100%"></div>`,
 })
-
 export class CustomClusterComponent implements AfterViewInit {
-
-@ViewChild('mapViewNode', { static: true })
-  mapViewNode!: ElementRef<HTMLDivElement>;
+  @ViewChild('mapViewDiv', { static: true })
+  mapViewEl!: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit(): void {
-    const points = [
-      { id: 1, lat: 12.9716, lon: 77.5946 },
-      { id: 2, lat: 12.9720, lon: 77.5949 },
-      { id: 3, lat: 12.9730, lon: 77.5955 },
-      { id: 4, lat: 12.9750, lon: 77.5965 },
-      { id: 5, lat: 13.0827, lon: 80.2707 },
-      { id: 6, lat: 13.0830, lon: 80.2710 },
-      { id: 7, lat: 13.0840, lon: 80.2720 },
-      { id: 8, lat: 28.6139, lon: 77.2090 },
-      { id: 9, lat: 28.6145, lon: 77.2100 },
-      { id: 10, lat: 19.0760, lon: 72.8777 }
+    const graphics: Graphic[] = [
+      this.createPoint(80.2707, 13.0827, 'Chennai', 1),
+      this.createPoint(72.8777, 19.076, 'Mumbai', 2),
+      this.createPoint(77.5946, 12.9716, 'Bengaluru', 3),
+      this.createPoint(78.4867, 17.385, 'Hyderabad', 4),
+      this.createPoint(88.3639, 22.5726, 'Kolkata', 5),
+      this.createPoint(76.2673, 9.9312, 'Kochi', 6),
+      this.createPoint(76.9366, 8.5241, 'Trivandrum', 7),
+      this.createPoint(74.856, 12.9141, 'Mangaluru', 8),
+      this.createPoint(73.8567, 18.5204, 'Pune', 9),
+      this.createPoint(77.209, 28.6139, 'Delhi', 10),
+      this.createPoint(75.8577, 22.7196, 'Indore', 11),
+      this.createPoint(72.5714, 23.0225, 'Ahmedabad', 12),
+      this.createPoint(85.8245, 20.2961, 'Bhubaneswar', 13),
+      this.createPoint(83.2185, 17.6868, 'Vizag', 14),
+      this.createPoint(79.0882, 21.1458, 'Nagpur', 15),
     ];
 
-    const graphics = points.map(p =>
-      new Graphic({
-        geometry: {
-          type: "point",
-          latitude: p.lat,
-          longitude: p.lon
-        },
-        attributes: {
-          ObjectID: p.id
-        }
-      })
-    );
-
-    const clusterLayer = new FeatureLayer({
+    const layer = new FeatureLayer({
       source: graphics,
-      geometryType: "point",
-      objectIdField: "ObjectID",
-
+      objectIdField: 'ObjectID',
+      geometryType: 'point',
       fields: [
-        { name: "ObjectID", type: "oid" }
+        { name: 'ObjectID', type: 'oid' },
+        { name: 'city', type: 'string' },
       ],
 
+      // individual point
+      renderer: {
+        type: 'simple',
+        symbol: {
+          type: 'simple-marker',
+          style: 'circle',
+          size: 12,
+          color: '#2BB4A0',
+          outline: {
+            color: 'white',
+            width: 1,
+          },
+        },
+      },
+      // point labels
+      labelingInfo: [
+        {
+          labelExpressionInfo: {
+            expression: 'Text($feature.ObjectID)',
+          },
+          labelPlacement: 'center-center',
+          symbol: {
+            type: 'text',
+            color: 'white',
+            haloColor: '#2BB4A0',
+            haloSize: 1,
+            font: {
+              size: 10,
+              weight: 'bold',
+            },
+          },
+        },
+      ],
+
+      // clusters
       featureReduction: {
-        type: "cluster",
-        clusterRadius: "80px"
-      }
+        type: 'cluster',
+        clusterRadius: '100px',
+
+        popupTemplate: {
+          title: 'Cluster',
+          content: 'Contains <b>{cluster_count}</b> locations',
+        },
+        //   cluster symbol
+        renderer: {
+          type: 'simple',
+          symbol: {
+            type: 'simple-marker',
+            style: 'circle',
+            color: '#2BB4A0',
+            outline: {
+              color: 'white',
+              width: 1.5,
+            },
+          },
+          // Total cluster count based size
+          visualVariables: [
+            {
+              type: 'size',
+              field: 'cluster_count',
+              stops: [
+                { value: 2, size: 22 },
+                { value: 5, size: 32 },
+                { value: 10, size: 42 },
+                { value: 20, size: 52 },
+              ],
+            },
+          ] as any[],
+        },
+        // cluster labels
+        labelingInfo: [
+          {
+            labelExpressionInfo: {
+              expression: 'Text($feature.cluster_count)',
+            },
+            labelPlacement: 'center-center',
+            symbol: {
+              type: 'text',
+              color: 'white',
+              font: {
+                size: 14,
+                weight: 'bold',
+              },
+            },
+          },
+        ],
+      },
     });
 
-    clusterLayer.renderer = {
-      type: "simple",
-
-      symbol: {
-        type: "simple-marker",
-        style: "circle",
-        outline: {
-          color: "#ffffff",
-          width: 1.5
-        }
-      },
-
-      visualVariables: [
-        {
-          type: "size",
-          field: "cluster_count",
-          stops: [
-            { value: 1, size: 10 },   
-            { value: 5, size: 24 },
-            { value: 15, size: 38 },
-            { value: 30, size: 56 }
-          ]
-        },
-        {
-          type: "color",
-          field: "cluster_count",
-          stops: [
-            { value: 1, color: "#93c5fd" },
-            { value: 5, color: "#3b82f6" },
-            { value: 15, color: "#1d4ed8" },
-            { value: 30, color: "#1e3a8a" }
-          ]
-        }
-      ] as any[]
-    };
-
-
-    clusterLayer.labelingInfo = [
-      {
-        labelPlacement: "center-center",
-
-        labelExpressionInfo: {
-          expression: "Text($feature.cluster_count, '#,###')"
-        },
-
-        symbol: {
-          type: "text",
-          color: "white",
-          haloColor: "#1e3a8a",
-          haloSize: 1,
-          font: {
-            size: 12,
-            weight: "bold"
-          }
-        }
-      }
-    ];
-
     const map = new Map({
-      basemap: "streets-navigation-vector",
-      layers: [clusterLayer]
+      basemap: 'gray-vector',
+      layers: [layer],
     });
 
     new MapView({
-      container: this.mapViewNode.nativeElement,
+      container: this.mapViewEl.nativeElement,
       map,
-      center: [78.9629, 20.5937], 
-      zoom: 4
+      center: [78.9629, 20.5937],
+      zoom: 4,
     });
   }
 
+  createPoint(lon: number, lat: number, city: string, id: number): Graphic {
+    return new Graphic({
+      geometry: {
+        type: 'point',
+        longitude: lon,
+        latitude: lat,
+      },
+      attributes: {
+        ObjectID: id,
+        city,
+      },
+    });
+  }
 }
-
