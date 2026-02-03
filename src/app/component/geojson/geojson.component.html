@@ -1,0 +1,13 @@
+<div #mapViewDiv class="map-view"></div>
+
+<div class="custom-popup" *ngIf="selectedFeature">
+  <h3>{{ selectedFeature.Establishment }}</h3>
+
+  <p><b>Cluster:</b> {{ selectedFeature.Cluster }}</p>
+  <p><b>Phase:</b> {{ selectedFeature.Phase }}</p>
+  <p><b>Status:</b> {{ selectedFeature.Status }}</p>
+  <p><b>Address:</b> {{ selectedFeature.Address_1 }}</p>
+  <p><b>Postcode:</b> {{ selectedFeature.Postcode }}</p>
+
+  <a [href]="selectedFeature.Website" target="_blank">Website</a>
+</div>
