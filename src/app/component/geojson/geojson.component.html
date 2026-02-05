@@ -1,4 +1,4 @@
-<div #mapViewDiv class="map-view"></div>
+<!-- <div #mapViewDiv class="map-view"></div>
 
 <div class="custom-popup" *ngIf="selectedFeature">
   <h3>{{ selectedFeature.Establishment }}</h3>
@@ -10,4 +10,19 @@
   <p><b>Postcode:</b> {{ selectedFeature.Postcode }}</p>
 
   <a [href]="selectedFeature.Website" target="_blank">Website</a>
+</div> --> 
+
+<div #mapViewDiv class="map-view"></div>
+
+<div class="custom-popup" *ngIf="selectedFeature">
+  <h3>{{ selectedFeature.Name || selectedFeature.Establishment }}</h3>
+
+  <ng-container *ngIf="selectedFeature.Cluster">
+    <p><b>Cluster:</b> {{ selectedFeature.Cluster }}</p>
+  </ng-container>
+
+  <ng-container *ngIf="selectedFeature.Length">
+    <p><b>Length:</b> {{ selectedFeature.Length }}</p>
+  </ng-container>
 </div>
+

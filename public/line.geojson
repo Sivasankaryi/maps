@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Halifax–Brighouse–Batley Line",
+        "description": "Line connecting Halifax, Brighouse, and Batley (West Yorkshire, UK)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-1.8600, 53.7250], 
+          [-1.7800, 53.7030], 
+          [-1.6300, 53.7000]
+        ]
+      }
+    }
+  ]
+}
