@@ -1,0 +1,60 @@
+.topology-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Top bar */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  width: 250px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.connect-btn {
+  padding: 8px 14px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.connect-btn:hover {
+  background: #e4e4e4;
+}
+
+.zoom-controls button {
+  padding: 6px 12px;
+  margin-left: 5px;
+  border: none;
+  background: #f5f5f5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.zoom-controls button:hover {
+  background: #ddd;
+}
+
+/* Diagram */
+.diagram-container {
+  width: 100%;
+  height: calc(100vh - 120px);
+  border-radius: 10px;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.diagram {
+  width: 100%;
+  height: 100%;
+}

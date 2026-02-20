@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "arcgis-concept": {
+=======
+    "goJS": {
+>>>>>>> GoJS
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
   "outputPath": "dist/arcgis-concept",
   "index": "src/index.html",
   "browser": "src/main.ts",
@@ -44,6 +49,32 @@
   "scripts": []
 }
 ,
+=======
+            "outputPath": "dist/go-js",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
+          },
+>>>>>>> GoJS
           "configurations": {
             "production": {
               "budgets": [
@@ -72,10 +103,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "arcgis-concept:build:production"
             },
             "development": {
               "buildTarget": "arcgis-concept:build:development"
+=======
+              "buildTarget": "goJS:build:production"
+            },
+            "development": {
+              "buildTarget": "goJS:build:development"
+>>>>>>> GoJS
             }
           },
           "defaultConfiguration": "development"
@@ -86,13 +124,21 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+<<<<<<< HEAD
             "polyfills": ["zone.js", "zone.js/testing"],
+=======
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+>>>>>>> GoJS
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
+<<<<<<< HEAD
               },
               {
                 "glob": "**/*",
@@ -103,6 +149,11 @@
             "styles": [
               "node_modules/@arcgis/core/assets/esri/themes/light/main.css",
                 "node_modules/@esri/calcite-components/dist/calcite/calcite.css",
+=======
+              }
+            ],
+            "styles": [
+>>>>>>> GoJS
               "src/styles.scss"
             ],
             "scripts": []
@@ -112,6 +163,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "73d8e74f-5abc-4172-b506-ced8f18284f5"
+=======
+    "analytics": "5c4eb590-b96e-495e-89ef-3adbee8ee7f3"
+>>>>>>> GoJS
   }
 }

@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+<<<<<<< HEAD
 import { CustomClusterComponent } from './component/custom-cluster/custom-cluster.component';
 import { GeojsonComponent } from './component/geojson/geojson.component';
 import { PushpinComponent } from './component/pushpin/pushpin.component';
@@ -14,4 +15,9 @@ export const routes: Routes = [
     loadComponent: () => import('./component/network-map/olt-ont-mdu/olt-ont-mdu.component').then(m => m.OltOntMduComponent)
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
+=======
+
+export const routes: Routes = [
+  
+>>>>>>> GoJS
 ];
