@@ -1,0 +1,176 @@
+<div class="map-container">
+
+  <!-- MAP -->
+  <div #mapViewDiv class="map-view"></div>
+
+  <!-- LEGEND -->
+ <div
+  class="legend-container"
+  [class.legend-with-table]="showOltTable || showOntMduTable"
+>
+  <div class="legend-table">
+
+    <div class="legend-row">
+      <div class="legend-left">
+        <span class="shape ont"></span>
+        <span>ONT</span>
+      </div>
+      <div class="legend-right">
+        <span class="severity critical"></span>
+        <span>Critical</span>
+      </div>
+    </div>
+
+    <div class="legend-row">
+      <div class="legend-left">
+        <span class="shape olt"></span>
+        <span>OLT</span>
+      </div>
+      <div class="legend-right">
+        <span class="severity major"></span>
+        <span>Major</span>
+      </div>
+    </div>
+
+    <!-- MDU -->
+    <div class="legend-row">
+      <div class="legend-left">
+        <span class="shape mdu"></span>
+        <span>MDU</span>
+      </div>
+      <div class="legend-right">
+        <span class="severity minor"></span>
+        <span>Minor</span>
+      </div>
+    </div>
+
+    <!-- RG -->
+    <div class="legend-row">
+      <div class="legend-left">
+        <span class="shape rg"></span>
+        <span>RG</span>
+      </div>
+      <div class="legend-right">
+        <span class="severity no-alarm"></span>
+        <span>No alarms</span>
+      </div>
+    </div>
+
+    <div class="legend-row">
+      <div class="legend-left"></div>
+      <div class="legend-right">
+        <span class="severity system"></span>
+        <span>System aggregation</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!-- BOTTOM TABLE PANEL -->
+  <div
+    class="bottom-tables-container"
+    [class.show-tables]="showOltTable || showOntMduTable"
+  >
+
+    <!-- OLT TABLE -->
+    <div *ngIf="showOltTable" class="table-section">
+
+      <div class="table-header">
+        <h3>OLTs</h3>
+        <button class="close-btn" (click)="closeTable()">✕</button>
+      </div>
+
+      <input
+        type="text"
+        placeholder="Search..."
+        [(ngModel)]="searchTerm"
+        class="table-search"
+      />
+
+      <div class="table-wrapper">
+        <table class="data-table">
+
+          <thead>
+            <tr>
+              <th (click)="sortBy('deviceName')">System Name</th>
+              <th (click)="sortBy('networkgroup_name')">Region/Location</th>
+              <th (click)="sortBy('deviceModel')">Model</th>
+              <th (click)="sortBy('systemAlarmCount')">System</th>
+              <th (click)="sortBy('rgFsan')">RG</th>
+              <th (click)="sortBy('transformedAlarmCount')">Transform</th>
+              <th (click)="sortBy('cloudHealthCount')">Health</th>
+              <th (click)="sortBy('cloudConnectivityCount')">Connectivity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let row of filteredOltData">
+<td class="system-name">
+  <span class="clickable-name">
+    {{ row.deviceName }}
+  </span>
+</td>
+<td>{{ row.networkgroup_name }}</td>
+              <td>{{ row.deviceModel }}</td>
+              <td class="cell-number">{{ row.systemAlarmCount }}</td>
+              <td class="cell-number">{{ row.cloudHealthCount }}</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+
+    <!-- ONT + MDU TABLE -->
+    <div *ngIf="showOntMduTable" class="table-section">
+
+      <div class="table-header">
+        <h3>ONTs & MDUs</h3>
+        <button class="close-btn" (click)="closeTable()">✕</button>
+      </div>
+
+      <input
+        type="text"
+        placeholder="Search..."
+        [(ngModel)]="searchTerm"
+        class="table-search"
+      />
+
+      <div class="table-wrapper">
+        <table class="data-table">
+
+          <thead>
+            <tr>
+              <th (click)="sortBy('deviceName')">System Name</th>
+              <th (click)="sortBy('networkgroup_name')">Location</th>
+              <th (click)="sortBy('deviceModel')">Model</th>
+              <th (click)="sortBy('systemAlarmCount')">System</th>
+              <th (click)="sortBy('cloudHealthCount')">Health</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let row of filteredOntMduData">
+<td class="system-name">
+  <span class="clickable-name">
+    {{ row.deviceName }}
+  </span>
+</td>
+              <td>{{ row.networkgroup_name }}</td>
+              <td>{{ row.deviceModel }}</td>
+              <td class="cell-number">{{ row.systemAlarmCount }}</td>
+              <td class="cell-number">{{ row.cloudHealthCount }}</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</div>

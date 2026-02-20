@@ -9,5 +9,9 @@ export const routes: Routes = [
   { path: 'geojson', component: GeojsonComponent },
   { path: 'pushpin', component: PushpinComponent },
   { path: 'custom-cluster', component: CustomClusterComponent },
+  {
+    path: 'olt-ont-mdu',
+    loadComponent: () => import('./component/network-map/olt-ont-mdu/olt-ont-mdu.component').then(m => m.OltOntMduComponent)
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
