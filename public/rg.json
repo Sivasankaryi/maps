@@ -1,0 +1,751 @@
+[
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "89b0edc1-2a11-433a-a3b1-61be43a7be3a",
+        "deviceModel": "GP4200A",
+        "deviceLocation": {
+            "networkgroup_name": "dshanloca",
+            "networkgroup_uuid": "fd010629-8667-4def-b7b8-c3974ab4f127"
+        },
+        "deviceRegion": {
+            "region_name": "dashanxxx",
+            "region_uuid": "2a390bc5-4852-49a0-9dce-3854989c5751"
+        },
+        "deviceName": "CXNK01A8635D",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": "CXNK01A8635D",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 18,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "CXNK015FB251_fsan_replace",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "b03f0c53-c8ad-4cda-82c8-b78d88227a93",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "CXNK015FB251_fsan_replace"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "68fb3c72-5ae6-4afa-9a7d-85899687aa73",
+        "deviceModel": "GS4227W",
+        "deviceLocation": {
+            "networkgroup_name": "nanjng",
+            "networkgroup_uuid": "0c94ddd7-afde-4cbe-9be1-27be873445ff"
+        },
+        "deviceRegion": {
+            "region_name": "jiangsu",
+            "region_uuid": "dd4a1296-fa72-4089-8ddf-6a83d95a6b2b"
+        },
+        "deviceName": "CXNK00CE9586",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "MINOR",
+        "fsan_serialnumber": "CXNK00CE9586",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 0,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 4,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "anne_CXNK00CE9586_new",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "28f6f9cc-ea51-4e67-8a90-a33ebf9d8e6c",
+                "rgFsan": "CXNK00CE9586",
+                "rgModel": "GS4227W",
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "anne_CXNK00CE9586  999"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "89b0edc1-2a11-433a-a3b1-61be43a7be3a",
+        "deviceModel": "GS4227W",
+        "deviceLocation": {
+            "networkgroup_name": "dshanloca",
+            "networkgroup_uuid": "fd010629-8667-4def-b7b8-c3974ab4f127"
+        },
+        "deviceRegion": {
+            "region_name": "dashanxxx",
+            "region_uuid": "2a390bc5-4852-49a0-9dce-3854989c5751"
+        },
+        "deviceName": "CXNK00CE956E",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "MAJOR",
+        "fsan_serialnumber": "CXNK00CE956E",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 9,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "CXNK00CE95B8_AE_Reboot",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "0d7d37bf-8d92-4d5a-a1c2-22fee6746ec8",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "CXNK00CE95B8_AE_Reboot"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "89cbcd7d-47b3-4834-8078-04226005d676",
+        "deviceModel": "801G",
+        "deviceLocation": {
+            "networkgroup_name": "nanjng",
+            "networkgroup_uuid": "0c94ddd7-afde-4cbe-9be1-27be873445ff"
+        },
+        "deviceRegion": {
+            "region_name": "jiangsu",
+            "region_uuid": "dd4a1296-fa72-4089-8ddf-6a83d95a6b2b"
+        },
+        "deviceName": "CXNK00301D68",
+        "orgId": 912693185,
+        "longitude": 118.77872,
+        "latitude": 32.0581299,
+        "nonZeroSev": "MINOR",
+        "fsan_serialnumber": "CXNK00301D68",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 0,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 8,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "Sub1",
+                "latitude": 32.0581299,
+                "longitude": 118.77872,
+                "subscriberId": "fa39ffbc-81c6-4509-9032-9437e4ae5544",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "Gulou, Nanjing, Jiangsu, China, 210093",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "Sub1"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "e1cab393-764a-47db-8571-8639ee173a14",
+        "deviceModel": "GP1000G",
+        "deviceLocation": {
+            "networkgroup_name": "wenqing_test",
+            "networkgroup_uuid": "19f5ae38-0e1f-40e0-b3e9-af5763e12a09"
+        },
+        "deviceRegion": {
+            "region_name": "wenqing_cms",
+            "region_uuid": "f11ad2fd-2f27-4efd-80f8-4f8cd03774e6"
+        },
+        "deviceName": "CXNK005E8DB7",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "MINOR",
+        "fsan_serialnumber": "CXNK005E8DB7",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 0,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 4,
+        "subscriberCount": 2,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "jieshan_5E8DB7adadda",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "208a3989-dcd9-408a-a7ab-181388b73c31",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "jieshan_5E8DB7adadda"
+            },
+            {
+                "highValue": "No",
+                "subscriberName": "CXNK005E8DB7",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "b5cb92b1-7f19-40de-bcfa-89482ed997d4",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "CXNK005E8DB7"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": true
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "045f5c52-8084-4c51-951d-8abb901b6627",
+        "deviceModel": "GS4227",
+        "deviceLocation": {
+            "networkgroup_name": "Nanjing",
+            "networkgroup_uuid": "5b2e16fd-e5e7-466d-a065-5e22c0bcf336"
+        },
+        "deviceRegion": {
+            "region_name": "S93_Rank",
+            "region_uuid": "335e09f8-d602-4b32-9dfa-6e813f0296f8"
+        },
+        "deviceName": "CXNK017917A0",
+        "orgId": 912693185,
+        "longitude": -71.7767475,
+        "latitude": 42.4007416,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": "CXNK017917A0",
+        "outage": true,
+        "outageAlarmName": "ont-missing",
+        "outageAlarmId": "045f5c52-8084-4c51-951d-8abb901b6627:1378512",
+        "systemAlarmCount": 9,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "NativeRG_Bosun",
+                "latitude": 42.4007416,
+                "longitude": -71.7767475,
+                "subscriberId": "21e705e7-32a8-4774-bd58-4f2dd5565170",
+                "rgFsan": "CXNK017917A0",
+                "rgModel": "GS4227",
+                "subscriberAddress": "74 BEAN RD,STERLING,MA,015642408,USA",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "NativeRG_Bosun"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "253d827e-f028-4c1a-a78c-ce5ac9380563",
+        "deviceModel": "GP4200A",
+        "deviceLocation": {
+            "networkgroup_name": "ser",
+            "networkgroup_uuid": "5f4234eb-bb9c-4964-b80f-f7240cbb91ff"
+        },
+        "deviceRegion": {
+            "region_name": "server",
+            "region_uuid": "e36f9485-0d58-412e-98dd-0e81c033627b"
+        },
+        "deviceName": "CXNK016BD324",
+        "orgId": 912693185,
+        "longitude": -132.33104,
+        "latitude": 45.468388,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": "CXNK016BD324",
+        "outage": true,
+        "outageAlarmName": "ont-missing",
+        "outageAlarmId": "253d827e-f028-4c1a-a78c-ce5ac9380563:526271887211304",
+        "systemAlarmCount": 9,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "CXNK016BD324",
+                "latitude": 45.468388,
+                "longitude": -132.33104,
+                "subscriberId": "a2d2c50d-4d10-4cf8-b4e7-0bf78c9d0b50",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "123 Main St, San Jose, CA USA",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "CXNK016BD324"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "1f312407-884e-491b-86ca-b530754bd2b7",
+        "deviceModel": "GP1000G",
+        "deviceLocation": {
+            "networkgroup_name": "anne_reg2",
+            "networkgroup_uuid": "2d19309f-846b-4685-9ccd-537ba9a1cd32"
+        },
+        "deviceRegion": {
+            "region_name": "anne_reg_2",
+            "region_uuid": "850d8afc-bd6e-4964-8314-742fb6bcf131"
+        },
+        "deviceName": "CXNK016ED06E",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "MINOR",
+        "fsan_serialnumber": "CXNK016ED06E",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 27,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "anne_CXNK016ECFF9",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "e1f75302-fd9a-4a3a-b616-c195dd8c4518",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "anne_CXNK016ECFF9 123"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "68fb3c72-5ae6-4afa-9a7d-85899687aa73",
+        "deviceModel": "GP1000G",
+        "deviceLocation": {
+            "networkgroup_name": "nanjng",
+            "networkgroup_uuid": "0c94ddd7-afde-4cbe-9be1-27be873445ff"
+        },
+        "deviceRegion": {
+            "region_name": "jiangsu",
+            "region_uuid": "dd4a1296-fa72-4089-8ddf-6a83d95a6b2b"
+        },
+        "deviceName": "CXNK005E8BA5",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "MINOR",
+        "fsan_serialnumber": "CXNK005E8BA5",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 18,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "anne_5E8BA5",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "4475d23c-6185-41ef-b58d-64015311199b",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "anne_5E8BA5 123"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "e1cab393-764a-47db-8571-8639ee173a14",
+        "deviceModel": "GP1100G",
+        "deviceLocation": {
+            "networkgroup_name": "wenqing_test",
+            "networkgroup_uuid": "19f5ae38-0e1f-40e0-b3e9-af5763e12a09"
+        },
+        "deviceRegion": {
+            "region_name": "wenqing_cms",
+            "region_uuid": "f11ad2fd-2f27-4efd-80f8-4f8cd03774e6"
+        },
+        "deviceName": "CXNK005E8C95",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": "CXNK005E8C95",
+        "outage": true,
+        "outageAlarmName": "ont-missing",
+        "outageAlarmId": "e1cab393-764a-47db-8571-8639ee173a14:167271",
+        "systemAlarmCount": 9,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "jieshanCXNK005E8C3FreplaceFSAN",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "b8fdff6b-b3d0-48c8-b03b-caa7ac609442",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "jieshanCXNK005E8C3FreplaceFSAN"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "89b0edc1-2a11-433a-a3b1-61be43a7be3a",
+        "deviceModel": "GP4200AH",
+        "deviceLocation": {
+            "networkgroup_name": "dshanloca",
+            "networkgroup_uuid": "fd010629-8667-4def-b7b8-c3974ab4f127"
+        },
+        "deviceRegion": {
+            "region_name": "dashanxxx",
+            "region_uuid": "2a390bc5-4852-49a0-9dce-3854989c5751"
+        },
+        "deviceName": "CXNK015A17B4",
+        "orgId": 912693185,
+        "longitude": -98.02760719999999,
+        "latitude": 37.2819272,
+        "nonZeroSev": "MAJOR",
+        "fsan_serialnumber": "CXNK015A17B4",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 18,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "Cytheria_AE_!",
+                "latitude": 37.2819272,
+                "longitude": -98.02760719999999,
+                "subscriberId": "5f6a6d1c-fca5-48db-b5aa-d27652fe247c",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "205 W FIFTEENTH ST, HARPER, KS, 67058, USA",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "Cytheria_AE_!"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "e1cab393-764a-47db-8571-8639ee173a14",
+        "deviceModel": "GS4227",
+        "deviceLocation": {
+            "networkgroup_name": "wenqing_test",
+            "networkgroup_uuid": "19f5ae38-0e1f-40e0-b3e9-af5763e12a09"
+        },
+        "deviceRegion": {
+            "region_name": "wenqing_cms",
+            "region_uuid": "f11ad2fd-2f27-4efd-80f8-4f8cd03774e6"
+        },
+        "deviceName": "CXNK00DF9DC5",
+        "orgId": 912693185,
+        "longitude": -121.9358009,
+        "latitude": 37.3885676,
+        "nonZeroSev": "MINOR",
+        "fsan_serialnumber": "CXNK00DF9DC5",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 0,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 8,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "jieshanmovementEXA",
+                "latitude": 37.3885676,
+                "longitude": -121.9358009,
+                "subscriberId": "c8ff3631-2b80-48d6-98f9-27ce29105412",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "2777 Orchard Pkwy, San Jose, CA 95132 (37.38900765, -121.93499173) (37.38836, -121.935439) (37.388959064795, -121.935748933785)",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "jieshanmovementEXA"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "91262bbf-9856-4c06-b90e-57cb6c51017f",
+        "deviceModel": "GS4227",
+        "deviceLocation": {
+            "networkgroup_name": "romal_laoca",
+            "networkgroup_uuid": "855261f5-5166-4086-aea9-99948cfb36dc"
+        },
+        "deviceRegion": {
+            "region_name": "romal",
+            "region_uuid": "87e85ad0-8568-43ff-9886-42f261ba1172"
+        },
+        "deviceName": "CXNK00DF9D95",
+        "orgId": 912693185,
+        "longitude": 116.3970962,
+        "latitude": 39.917273,
+        "nonZeroSev": "MAJOR",
+        "fsan_serialnumber": "CXNK00DF9D95",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 9,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "Cytheria_AE",
+                "latitude": 39.917273,
+                "longitude": 116.3970962,
+                "subscriberId": "4fcdf91d-bf3e-4345-a7b7-b6a313f3a289",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "4 Jingshan Front St, Dongcheng, Beijing, China, 100009",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "Cytheria_AE"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "ONT",
+        "deviceUuid": "253d827e-f028-4c1a-a78c-ce5ac9380563",
+        "deviceModel": "GP4200A",
+        "deviceLocation": {
+            "networkgroup_name": "ser",
+            "networkgroup_uuid": "5f4234eb-bb9c-4964-b80f-f7240cbb91ff"
+        },
+        "deviceRegion": {
+            "region_name": "server",
+            "region_uuid": "e36f9485-0d58-412e-98dd-0e81c033627b"
+        },
+        "deviceName": "CXNK016BD327",
+        "orgId": 912693185,
+        "longitude": -95.6104383,
+        "latitude": 29.9065034,
+        "nonZeroSev": null,
+        "fsan_serialnumber": "CXNK016BD327",
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 9,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 1,
+        "subscriberDetailsList": [
+            {
+                "highValue": "No",
+                "subscriberName": "CXNK016BD327",
+                "latitude": 29.9065034,
+                "longitude": -95.6104383,
+                "subscriberId": "008206ba-2682-4152-84e6-5bade8c2adf3",
+                "rgFsan": null,
+                "rgModel": null,
+                "subscriberAddress": "14520 Wagg Way Rd 14520 WAGG WAY RD HOUSTON, TX 77041",
+                "msSmartTown": false,
+                "msSmartMdu": false,
+                "accountNo": "CXNK016BD327"
+            }
+        ],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "OLT",
+        "deviceUuid": "253d827e-f028-4c1a-a78c-ce5ac9380563",
+        "deviceModel": "E7 System",
+        "deviceLocation": {
+            "networkgroup_name": "ser",
+            "networkgroup_uuid": "5f4234eb-bb9c-4964-b80f-f7240cbb91ff"
+        },
+        "deviceRegion": {
+            "region_name": "server",
+            "region_uuid": "e36f9485-0d58-412e-98dd-0e81c033627b"
+        },
+        "deviceName": "10.245.93.101",
+        "orgId": 912693185,
+        "longitude": -121.935748933785,
+        "latitude": 37.388959064795,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": null,
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 190,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 0,
+        "subscriberDetailsList": [],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "OLT",
+        "deviceUuid": "68fb3c72-5ae6-4afa-9a7d-85899687aa73",
+        "deviceModel": "E7 System",
+        "deviceLocation": {
+            "networkgroup_name": "nanjng",
+            "networkgroup_uuid": "0c94ddd7-afde-4cbe-9be1-27be873445ff"
+        },
+        "deviceRegion": {
+            "region_name": "jiangsu",
+            "region_uuid": "dd4a1296-fa72-4089-8ddf-6a83d95a6b2b"
+        },
+        "deviceName": "anne_38.43",
+        "orgId": 912693185,
+        "longitude": -121.935748933785,
+        "latitude": 37.388959064795,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": null,
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 160,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 5,
+        "subscriberCount": 0,
+        "subscriberDetailsList": [],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "OLT",
+        "deviceUuid": "da6ae43a-ae03-4a66-8216-4ebd304b049c",
+        "deviceModel": "E7 System",
+        "deviceLocation": {
+            "networkgroup_name": "wenqntest",
+            "networkgroup_uuid": "3eaa8242-e067-4c84-a0df-ceecf8632ba7"
+        },
+        "deviceRegion": {
+            "region_name": "wenqintest",
+            "region_uuid": "a98bc97f-12b5-4af3-b6a8-7a3c33bbbc16"
+        },
+        "deviceName": "E7-jieshan122__240e:6a0:37:5200::400",
+        "orgId": 912693185,
+        "longitude": -121.935748933785,
+        "latitude": 37.388959064795,
+        "nonZeroSev": "CRITICAL",
+        "fsan_serialnumber": null,
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 220,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 0,
+        "subscriberCount": 0,
+        "subscriberDetailsList": [],
+        "highValue": "No",
+        "integratedOnt": false
+    },
+    {
+        "deviceType": "OLT",
+        "deviceUuid": "1bfbd926-89d7-4f60-a04a-1b4887f21e8f",
+        "deviceModel": "E3 System",
+        "deviceLocation": {
+            "networkgroup_name": "jieshan_gcp_location",
+            "networkgroup_uuid": "115d5e0d-6f54-4322-b246-ec03c19b150b"
+        },
+        "deviceRegion": {
+            "region_name": "jieshan_gcp",
+            "region_uuid": "5dd4b8b2-9a14-4d78-8c1c-da2d6075035a"
+        },
+        "deviceName": "E3-jieshan_10.245.93.125",
+        "orgId": 912693185,
+        "longitude": -115.15609742848,
+        "latitude": 36.147007903153,
+        "nonZeroSev": "MAJOR",
+        "fsan_serialnumber": null,
+        "outage": false,
+        "outageAlarmName": null,
+        "outageAlarmId": null,
+        "systemAlarmCount": 120,
+        "transformedAlarmCount": 0,
+        "cloudConnectivityCount": 0,
+        "cloudHealthCount": 5,
+        "subscriberCount": 0,
+        "subscriberDetailsList": [],
+        "highValue": "No",
+        "integratedOnt": false
+    }
+]
